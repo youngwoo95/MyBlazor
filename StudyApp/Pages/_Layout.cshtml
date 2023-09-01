@@ -1,0 +1,201 @@
+﻿@using Microsoft.AspNetCore.Components.Web
+@namespace StudyApp.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="~/" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link href="css/site.css" rel="stylesheet" />
+    <link href="StudyApp.styles.css" rel="stylesheet" />
+    <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
+    <style>
+        html, body{
+            width:100%;
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        *{
+            margin:0px;
+            padding:0px;
+        }
+
+        .header{
+            width: 100%;
+            height: 250px;
+            border-bottom: 1px solid black;
+        }
+
+        .header_title {
+            font-size: 50px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+            height: 150px;
+        }
+
+        .header_subtitle {
+            font-size: 15px;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .navibar {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            box-sizing: border-box;
+        }
+      
+        .menu{
+            width: 95%;
+            height: 50px;
+            background-color: #232323;
+            display: block;
+        }
+
+        .menu_item {
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .dropdown {
+            position: relative;
+            list-style: none;
+        }
+
+        .dropdownmenu{
+            color: white;
+            width: 80px;
+            padding: 13px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .dropdowncontent {
+            position: absolute;
+            background-color: #232323;
+            min-width: 110px;
+            display: none;
+            z-index:1
+        }
+
+        .dropdowncontent a {
+            text-decoration: none;
+            display: block;
+            padding: 12px 16px;
+            text-align: center;
+            color: white;
+        }
+
+        .dropdowncontent a:hover {
+            background-color: red;
+            color: black;
+        }
+
+        .dropdown:hover .dropdowncontent {
+            display: block;
+        }
+
+        .dropdownmenu:hover {
+            background-color: orange;
+            color: black;
+        }
+
+        .home {
+            width: 5%;
+            height: 50px;
+            border: none;
+            background-color: orange;
+            text-align: center;
+        }
+
+        .home a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            width: 100%;
+            height: 100%;
+            line-height:50px;
+        }
+
+        .home:hover {
+            cursor: pointer;
+            color: black;
+        }
+
+        .home a:hover {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header_title">
+            My Home
+        </div>
+        <div class="header_subtitle">
+            레이아웃 잡기 테스트
+        </div>
+    </div>
+    <div class="navibar">
+        <div class="menu">
+            <ul class="menu_item">
+                <li class="dropdown">
+                    <div class="dropdownmenu">메뉴1</div>
+                    <div class="dropdowncontent">
+                        <a href="/table">서브메뉴1</a>
+                        <a href="#none">서브메뉴2</a>
+                        <a href="#none">서브메뉴3</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <div class="dropdownmenu">메뉴2</div>
+                    <div class="dropdowncontent">
+                        <a href="#none">서브메뉴1</a>
+                        <a href="#none">서브메뉴2</a>
+                        <a href="#none">서브메뉴3</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <div class="dropdownmenu">메뉴3</div>
+                    <div class="dropdowncontent">
+                        <a href="#none">서브메뉴1</a>
+                        <a href="#none">서브메뉴2</a>
+                        <a href="#none">서브메뉴3</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="home">
+            <a href="/index">Home</a>
+        </div>
+    </div>
+    @RenderBody()
+
+    <div id="blazor-error-ui">
+        <environment include="Staging,Production">
+            An error has occurred. This application may no longer respond until reloaded.
+        </environment>
+        <environment include="Development">
+            An unhandled exception has occurred. See browser dev tools for details.
+        </environment>
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+
+    <script src="_framework/blazor.server.js"></script>
+</body>
+</html>

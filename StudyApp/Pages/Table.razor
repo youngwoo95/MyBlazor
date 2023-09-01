@@ -1,0 +1,125 @@
+﻿@page "/table"
+@inject IJSRuntime JSRuntime
+
+<PageTitle>테이블 그리기 예제</PageTitle>
+
+<style>
+
+    .main_container {
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        background-color: #edece8;
+        box-sizing:border-box;
+    }
+
+    table{
+        width:100%;
+        height:100%;
+        border-collapse: collapse;
+    }
+    th{
+        border-bottom: 1px dashed black;
+        text-align: center;
+        height:50px;
+    }
+
+    td{
+        border-bottom: 1px solid black;
+        text-align:center;
+        height:40px;
+    }
+
+    #chkbox{
+        width:30px;
+    }
+
+    
+
+    #ordbox{
+        width:100px;
+    }
+
+    #title{
+        width:100px;
+    }
+
+    #name{
+        width: 200px;
+    }
+
+    #content{
+        width:800px;
+    }
+
+    #create{
+        width:150px;
+    }
+
+    .btnbox{
+        display:flex;
+        flex-direction:row;
+        justify-content:end;
+        width:100%;
+    }
+
+    .boxitem{
+        display:block;
+    }
+
+</style>
+
+<div class="main_container">
+    <table>
+        <tr>
+            <th id="chkbox"><input type="checkbox"/></th>
+            <th id="ordbox">순서</th>
+            <th id="title">제목</th>
+            <th id="name">작성자</th>
+            <th id="content">내용</th>
+            <th id="create">일자</th>
+        </tr>
+
+        @for(int i=0;i<10;i++){
+        <tr>
+            <td id="chkbox"><input type="checkbox" onclick="@(()=>btnEdit(i))"/></td>
+            <td id="ordbox">@(i+1)</td>
+            <td id="title">제목입니다</td>
+            <td id="name">김김김</td>
+            <td id="content">내용요요요요요요용요용</td>
+            <td id="create">2023-09-01</td>
+        </tr>
+        }
+    </table>
+</div>
+
+<div class="btnbox">
+    <div class="boxitem">
+        <button class="btn btn-primary" style="width:100px" @onclick="@(()=>btnAdd())">추가</button>
+        <button class="btn btn-success" style="width:100px" @onclick="@(()=>btnEdit(2))">수정</button>
+        <button class="btn btn-danger" style="width:100px" @onclick="@(()=> btnDelete(3))">삭제</button>
+    </div>
+</div>
+
+
+@code {
+
+    // 추가버튼
+    private async Task btnAdd()
+    {
+        await JSRuntime.InvokeAsync<object>("alert", "추가버튼 클릭");
+    }
+
+    private async Task btnEdit(int idx)
+    {
+        await JSRuntime.InvokeAsync<bool>("confirm", $"{idx}번 글을 정말로 수정하시겠습니까?");
+    }
+
+    // 삭제버튼
+    private async Task btnDelete(int idx)
+    {
+        await JSRuntime.InvokeAsync<bool>("confirm", $"{idx}번 글을 정말로 삭제하시겠습니까?");
+    }
+}
