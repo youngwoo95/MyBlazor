@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HYAtmU2WI7APXOcep+QGLBZAZShruQnK7r7CL3bUr4I=",
+  "Hash": "ppRHRXQhn5uFhg9xXViSrej9pON8Ic9qc8TM9PnJQX4=",
   "Source": "StudyApp",
   "BasePath": "_content/StudyApp",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "StudyApp\\wwwroot",
       "Source": "StudyApp",
-      "ContentRoot": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\",
       "BasePath": "_content/StudyApp",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\StudyApp.styles.css",
+      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\StudyApp.styles.css",
       "SourceId": "StudyApp",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/StudyApp",
       "RelativePath": "StudyApp.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\StudyApp.styles.css"
+      "OriginalItemSpec": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\StudyApp.styles.css"
     },
     {
-      "Identity": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\StudyApp.bundle.scp.css",
+      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\StudyApp.bundle.scp.css",
       "SourceId": "StudyApp",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/StudyApp",
       "RelativePath": "StudyApp.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\StudyApp.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\StudyApp.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "StudyApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\",
       "BasePath": "_content/StudyApp",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "StudyApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\",
       "BasePath": "_content/StudyApp",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "StudyApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\",
       "BasePath": "_content/StudyApp",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "StudyApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\",
       "BasePath": "_content/StudyApp",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "StudyApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\",
       "BasePath": "_content/StudyApp",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "StudyApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\",
       "BasePath": "_content/StudyApp",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "StudyApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\",
       "BasePath": "_content/StudyApp",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "StudyApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\",
       "BasePath": "_content/StudyApp",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "StudyApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\",
       "BasePath": "_content/StudyApp",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "StudyApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\",
       "BasePath": "_content/StudyApp",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "StudyApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\",
       "BasePath": "_content/StudyApp",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\css\\site.css",
       "SourceId": "StudyApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\",
       "BasePath": "_content/StudyApp",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\favicon.ico",
       "SourceId": "StudyApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\",
       "BasePath": "_content/StudyApp",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -270,6 +270,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\js\\interop.js",
+      "SourceId": "StudyApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\",
+      "BasePath": "_content/StudyApp",
+      "RelativePath": "js/interop.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\interop.js"
     }
   ]
 }

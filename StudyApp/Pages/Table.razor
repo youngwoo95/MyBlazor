@@ -1,4 +1,5 @@
 ﻿@page "/table"
+@using StudyApp.Data;
 @inject IJSRuntime JSRuntime
 
 <PageTitle>테이블 그리기 예제</PageTitle>
@@ -74,24 +75,42 @@
 <div class="main_container">
     <table>
         <tr>
-            <th id="chkbox"><input type="checkbox"/></th>
+            <th><input id="allcheckbox" type="checkbox" onclick="@(()=>btnAll("allcheckbox"))" /></th>
             <th id="ordbox">순서</th>
             <th id="title">제목</th>
             <th id="name">작성자</th>
             <th id="content">내용</th>
             <th id="create">일자</th>
         </tr>
-
-        @for(int i=0;i<10;i++){
+        @* 블레이저 반복문 처리방법 [1] *@
+        
+        @foreach(var item in table)
+        {
         <tr>
-            <td id="chkbox"><input type="checkbox" onclick="@(()=>btnEdit(i))"/></td>
-            <td id="ordbox">@(i+1)</td>
-            <td id="title">제목입니다</td>
+            <td id="chkbox"><input name="checkbox" type="checkbox" onclick="@(()=>btnEdit(item.Index))"/></td>
+            <td id="ordbox">@item.Index</td>
+            <td id="title">제목입니다1</td>
             <td id="name">김김김</td>
             <td id="content">내용요요요요요요용요용</td>
             <td id="create">2023-09-01</td>
         </tr>
         }
+        
+        @* 블레이저 반복문 처리방법 [2] *@
+        @*
+        @for(int i = 0; i < table.Count; i++)
+        {
+            var index = i;
+            <tr>
+                <td id="chkbox"><input type="checkbox" onclick="@(()=>btnEdit(index))" /></td>
+                <td id="ordbox">@table[i].Index</td>
+                <td id="title">제목입니다1</td>
+                <td id="name">김김김</td>
+                <td id="content">내용요요요요요요용요용</td>
+                <td id="create">2023-09-01</td>
+            </tr>
+        }
+        *@
     </table>
 </div>
 
@@ -104,7 +123,33 @@
 </div>
 
 
+
+
 @code {
+    List<TableModel> table = new List<TableModel>();
+
+    protected override void OnInitialized()
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            table.Add(new TableModel()
+            {
+                    Index = i + 1,
+                    Title = "제목입니다",
+                    User = "김김김",
+                    Content = "내용입니다",
+            });
+        }
+    }
+
+    private async Task btnAll(string id)
+    {
+        //await JSRuntime.InvokeAsync<object>("StartJs", "name");
+
+        await JSRuntime.InvokeAsync<object>("createAlert", id);
+
+        Console.WriteLine("전체체크");
+    }
 
     // 추가버튼
     private async Task btnAdd()
@@ -114,7 +159,16 @@
 
     private async Task btnEdit(int idx)
     {
-        await JSRuntime.InvokeAsync<bool>("confirm", $"{idx}번 글을 정말로 수정하시겠습니까?");
+        bool result = await JSRuntime.InvokeAsync<bool>("confirm", $"{idx}번 글을 정말로 수정하시겠습니까?");
+        if (result)
+        {
+            // 수정함
+        }
+        else
+        {
+            // 수정안함
+        }
+
     }
 
     // 삭제버튼

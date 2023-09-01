@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3bZfj21YO5MzNo2Vyx5gRlMvrKsFtpI43wo3Rd4kgZle5VZTNxKrafQtpVnxv+REEfIBiiTprdKHlRJw/5hRxw==",
+  "dgSpecHash": "QW9W0ctz+g91a63JXUWWhZTBGawgf2fG4SLDL9Ps8bg7k61SOhW64q+PNhaBxqbkZDXpi67zZogGPzRAHc44eQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\repos\\StudyApp\\StudyApp\\StudyApp.csproj",
+  "projectFilePath": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\StudyApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
