@@ -72,57 +72,59 @@
 
 </style>
 
-<div class="main_container">
-    <table>
-        <tr>
-            <th><input id="allcheckbox" type="checkbox" onclick="@(()=>btnAll("allcheckbox"))" /></th>
-            <th id="ordbox">순서</th>
-            <th id="title">제목</th>
-            <th id="name">작성자</th>
-            <th id="content">내용</th>
-            <th id="create">일자</th>
-        </tr>
-        @* 블레이저 반복문 처리방법 [1] *@
-        
-        @foreach(var item in table)
-        {
-        <tr>
-            <td id="chkbox"><input name="checkbox" type="checkbox" onclick="@(()=>btnEdit(item.Index))"/></td>
-            <td id="ordbox">@item.Index</td>
-            <td id="title">제목입니다1</td>
-            <td id="name">김김김</td>
-            <td id="content">내용요요요요요요용요용</td>
-            <td id="create">2023-09-01</td>
-        </tr>
-        }
-        
-        @* 블레이저 반복문 처리방법 [2] *@
-        @*
-        @for(int i = 0; i < table.Count; i++)
-        {
-            var index = i;
+<EditForm Model="@table">
+    <div class="main_container">
+        <table>
             <tr>
-                <td id="chkbox"><input type="checkbox" onclick="@(()=>btnEdit(index))" /></td>
-                <td id="ordbox">@table[i].Index</td>
+                <th><input id="allcheckbox" type="checkbox" onclick="@(()=>btnAll("allcheckbox"))" /></th>
+                <th id="ordbox">순서</th>
+                <th id="title">제목</th>
+                <th id="name">작성자</th>
+                <th id="content">내용</th>
+                <th id="create">일자</th>
+            </tr>
+            @* 블레이저 반복문 처리방법 [1] *@
+        
+            @foreach(var item in table)
+            {
+            <tr>
+                @*<td id="chkbox"><input name="checkbox" type="checkbox" onclick="@(()=>btnEdit(item.Index))"/></td>*@
+                <td id="chkbox"><input name="checkbox" type="checkbox" onclick="@(()=>CheckClick(item))"/></td>
+                <td id="ordbox">@item.Index</td>
                 <td id="title">제목입니다1</td>
                 <td id="name">김김김</td>
                 <td id="content">내용요요요요요요용요용</td>
                 <td id="create">2023-09-01</td>
             </tr>
-        }
-        *@
-    </table>
-</div>
-
-<div class="btnbox">
-    <div class="boxitem">
-        <button class="btn btn-primary" style="width:100px" @onclick="@(()=>btnAdd())">추가</button>
-        <button class="btn btn-success" style="width:100px" @onclick="@(()=>btnEdit(2))">수정</button>
-        <button class="btn btn-danger" style="width:100px" @onclick="@(()=> btnDelete(3))">삭제</button>
+            }
+        
+            @* 블레이저 반복문 처리방법 [2] *@
+            @*
+            @for(int i = 0; i < table.Count; i++)
+            {
+                var index = i;
+                <tr>
+                    <td id="chkbox"><input type="checkbox" onclick="@(()=>btnEdit(index))" /></td>
+                    <td id="ordbox">@table[i].Index</td>
+                    <td id="title">제목입니다1</td>
+                    <td id="name">김김김</td>
+                    <td id="content">내용요요요요요요용요용</td>
+                    <td id="create">2023-09-01</td>
+                </tr>
+            }
+            *@
+        </table>
     </div>
-</div>
 
+    <div class="btnbox">
+        <div class="boxitem">
+            <button class="btn btn-primary" style="width:100px" @onclick="@(()=>btnAdd(table))">추가</button>
+            <button class="btn btn-success" style="width:100px" @onclick="@(()=>btnEdit(table))">수정</button>
+            <button class="btn btn-danger" style="width:100px" @onclick="@(()=> btnDelete(table))">삭제</button>
+        </div>
+    </div>
 
+</EditForm>
 
 
 @code {
@@ -134,12 +136,18 @@
         {
             table.Add(new TableModel()
             {
-                    Index = i + 1,
-                    Title = "제목입니다",
-                    User = "김김김",
-                    Content = "내용입니다",
+                isChecked=false,
+                Index = i + 1,
+                Title = "제목입니다",
+                User = "김김김",
+                Content = "내용입니다",
             });
         }
+    }
+
+    private void CheckClick(TableModel model)
+    {
+        model.isChecked = !model.isChecked;
     }
 
     private async Task btnAll(string id)
@@ -152,28 +160,42 @@
     }
 
     // 추가버튼
-    private async Task btnAdd()
+    private async Task btnAdd(List<TableModel> model)
     {
-        await JSRuntime.InvokeAsync<object>("alert", "추가버튼 클릭");
+        await JSRuntime.InvokeAsync<object>("alert", "추가화면으로 이동");
     }
 
-    private async Task btnEdit(int idx)
+    // 얘는 하나만 나와야됨.
+    private async Task btnEdit(List<TableModel> model)
     {
-        bool result = await JSRuntime.InvokeAsync<bool>("confirm", $"{idx}번 글을 정말로 수정하시겠습니까?");
+        var list = model.FirstOrDefault(p => p.isChecked == true);
+
+        bool result = await JSRuntime.InvokeAsync<bool>("confirm", $"{list.Index}번 글을 정말로 수정하시겠습니까?");
         if (result)
         {
             // 수정함
+            await JSRuntime.InvokeAsync<object>("alert", "수정화면으로 이동");
         }
         else
         {
             // 수정안함
         }
-
+        
     }
 
     // 삭제버튼
-    private async Task btnDelete(int idx)
+    private async Task btnDelete(List<TableModel> model)
     {
-        await JSRuntime.InvokeAsync<bool>("confirm", $"{idx}번 글을 정말로 삭제하시겠습니까?");
+        var list = model.Where(p => p.isChecked == true).ToList();
+
+        // 테스트 내용 - 화면표시용
+        string test = string.Empty;
+        for(int i = 0; i < list.Count; i++)
+        {
+            test += list[i].Index +",";
+        }
+        test = test.TrimEnd(','); // 마지막문자 제거
+
+        await JSRuntime.InvokeAsync<bool>("confirm", $"{test}번 글을 정말로 삭제하시겠습니까?");
     }
 }

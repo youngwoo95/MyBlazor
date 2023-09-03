@@ -26,5 +26,10 @@
         /// 작성일
         /// </summary>
         public string Date { get; set; } = DateTime.Now.ToString("yyyy-MM-dd");
+
+        /// <summary>
+        /// 체크박스 체크유무
+        /// </summary>
+        public bool isChecked { get; set; } = false;
     }
 }
