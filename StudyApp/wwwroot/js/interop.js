@@ -6,12 +6,34 @@ function createAlert(item) {
 
         temp.forEach((checkbox) => {
             checkbox.checked = true;
-            });
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+        });
+
+        boxview();
+
+        return true;
     }else{
          let temp = document.getElementsByName("checkbox");
 
         temp.forEach((checkbox) => {
             checkbox.checked = false;
-            });
+            const edit = document.getElementById("editbox").style.display = "inline";
+        });
+
+        boxview();
+        return false;
+    }
+}
+
+function boxview() {
+    
+    var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+
+    if (checkboxes.length > 1) {
+        const edit = document.getElementById("editbox").style.display = "none";
+    }
+
+    else {
+        const edit = document.getElementById("editbox").style.display = "inline";
     }
 }

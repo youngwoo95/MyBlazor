@@ -119,7 +119,7 @@
     <div class="btnbox">
         <div class="boxitem">
             <button class="btn btn-primary" style="width:100px" @onclick="@(()=>btnAdd(table))">추가</button>
-            <button class="btn btn-success" style="width:100px" @onclick="@(()=>btnEdit(table))">수정</button>
+            <button id="editbox" class="btn btn-success" style="width:100px" @onclick="@(()=>btnEdit(table))">수정</button>
             <button class="btn btn-danger" style="width:100px" @onclick="@(()=> btnDelete(table))">삭제</button>
         </div>
     </div>
@@ -145,8 +145,10 @@
         }
     }
 
-    private void CheckClick(TableModel model)
+    private async Task CheckClick(TableModel model)
     {
+        await JSRuntime.InvokeAsync<object>("boxview");
+
         model.isChecked = !model.isChecked;
     }
 
@@ -154,9 +156,22 @@
     {
         //await JSRuntime.InvokeAsync<object>("StartJs", "name");
 
-        await JSRuntime.InvokeAsync<object>("createAlert", id);
+        var temp = await JSRuntime.InvokeAsync<object>("createAlert", id);
 
-        Console.WriteLine("전체체크");
+        if (Convert.ToBoolean(temp.ToString()))
+        {
+            foreach(var item in table)
+            {
+                item.isChecked = true;
+            }
+        }
+        else
+        {
+            foreach(var item in table)
+            {
+                item.isChecked = false;
+            }
+        }
     }
 
     // 추가버튼
@@ -180,7 +195,7 @@
         {
             // 수정안함
         }
-        
+
     }
 
     // 삭제버튼
@@ -189,13 +204,15 @@
         var list = model.Where(p => p.isChecked == true).ToList();
 
         // 테스트 내용 - 화면표시용
-        string test = string.Empty;
-        for(int i = 0; i < list.Count; i++)
+        if (list.Count > 0)
         {
-            test += list[i].Index +",";
+            string test = string.Empty;
+            for (int i = 0; i < list.Count; i++)
+            {
+                test += list[i].Index + ",";
+            }
+            test = test.TrimEnd(','); // 마지막문자 제거
+            await JSRuntime.InvokeAsync<bool>("confirm", $"{test}번 글을 정말로 삭제하시겠습니까?");
         }
-        test = test.TrimEnd(','); // 마지막문자 제거
-
-        await JSRuntime.InvokeAsync<bool>("confirm", $"{test}번 글을 정말로 삭제하시겠습니까?");
     }
 }
