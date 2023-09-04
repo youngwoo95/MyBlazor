@@ -37,3 +37,17 @@ function boxview() {
         const edit = document.getElementById("editbox").style.display = "inline";
     }
 }
+
+
+// alert 창 실행
+function CustomAlert() {
+    alert("alert() 실행");
+}
+
+// 글자 스타일 및 내용 변경
+function TransText(item,content) {
+    //document.getElementById("txtTrans").innerHTML = "내용이 변경되었습니다.";
+    document.getElementById(item).innerHTML = content; // 내용 변경
+    document.getElementById(item).style.color = "red"; // 글자 색 변경
+    document.getElementById(item).style.fontWeight = "bold"; // 글자 진하게
+}
