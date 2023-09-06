@@ -12,23 +12,225 @@
     }
 </style>
 
-<h3>샘플</h3>
+<h3>버튼 (자바스크립트)</h3>
 <hr />
 <div style="display:flex; flex-direction:row; justify-content:start;">
     <button class="btn btn-primary" style="margin-right:10px" @onclick="@(()=>btnbutton())">Alert 버튼</button>
-    <button class="btn btn-danger" style="margin-right:10px" @onclick="@(()=>btnbutton())">버튼</button>
-    <button class="btn btn-primary" style="margin-right:10px" @onclick="@(()=>btnbutton())">버튼</button>
+    <button class="btn btn-danger" style="margin-right:10px" @onclick="@(()=>btnConfirmbutton())">Confirm 버튼</button>
+    <button class="btn btn-dark" style="margin-right:10px" @onclick="@(()=>btnPrompt())">Prompt 버튼</button>
 </div>
+
 <hr />
 <p id="txtTrans">변경전 내용입니다.</p>
 <button class="btn btn-primary" @onclick="@(()=>btnTransText())">버튼2</button>
+
 <hr />
+<h3>토글스위치 (CSS)</h3>
+
+<style>
+    /* 체크박스 -> 토글버튼 */
+    input[type="checkbox"]{
+        appearance:none;
+        /* 알약 스타일 */
+        position:relative;
+        border:max(2px, 0.1em) solid gray;
+        border-radius: 1.25em;
+        width: 2.25em;
+        height: 1.25em;
+    }
+
+    /* 스위치 안 움직이는 원형 */
+    input[type="checkbox"]::before{
+        content:"";
+        position: absolute;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        transform: scale(0.7);
+        background-color: gray;
+        transition: left 250ms linear;
+    }
+
+    /* 켜짐상태 스타일 */
+    input[type="checkbox"]:checked::before{
+        background-color:white;
+        left: 1em;
+    }
+
+    input[type="checkbox"]:checked{
+        background-color: tomato;
+        border-color: tomato;
+    }
+    
+    /* 불능 상태 스타일 */
+    input[type="checkbox"]:disabled{
+        border-color: lightgray;
+        opacity: 0.inherit;
+        cursor: not-allowed;
+    }
+
+    input[type="checkbox"]:disabled:before{
+        background-color: lightgray;
+    }
+
+    input[type="checkbox"]:disabled + span{
+        opacity: 0.7;
+        cursor: not-allowed;
+    }
+
+    /* 포커스 상태 스타일 - 키보드 접근 대응*/
+    input[type="checkbox"]:focus-visible{
+        outline-offset: max(2px, 0.1em);
+        outline: max(2px, 0.1em) solid tomato;
+    }
+
+    /* 호버 상태 스타일 */
+    input[type="checkbox"]:enabled:hover{
+        box-shadow: 0 0 0 max(4px, 0.2em) gray;
+    }
+
+    /* 애니메이션 */
+    input[type="checkbox"]::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        transform: scale(0.8);
+        background-color: gray;
+        transition: left 250ms linear;
+    }
+
+</style>
+
+<label 
+    style="display: inline-flex;
+           align-items:center;
+           gap:0.5rem;
+           cursor:pointer">
+    <input type="checkbox" />
+    <span>스위치</span>
+</label>
+
+<hr />
+<h3> 라디오 버튼 </h3>
+
+<style>
+    /* 라디오 버튼과 라벨 텍스트 간 정렬 */
+    label{
+        font-size: 18px;
+        line-height: 2rem;
+        padding: 0.2em 0.4em;
+    }
+
+    /* 기본 스타일 제거 */
+    input[type="radio"], span{
+        vertical-align:middle;
+    }
+
+    /* 라디오 버튼 스타일 */
+    input[type="radio"]{
+        vertical-align: middle;
+        appearance: none;
+        border: max(2px, 0.1em) solid gray;
+        border-radius: 50%;
+        width: 1.25em;
+        height: 1.25em;
+    }
+
+    /* 체크 상태 스타일 */
+    input[type="radio"]:checked{
+        border: 0.4em solid tomato;
+    }
+
+    /* 포커스 상태 스타일 */
+    input[type="radio"]:focus-visible{
+        outline: max(2px, 0.1em) dotted tomato;
+        outline-offset: max(2px, 0.1em);
+    }
+
+    /* 호버 상태 스타일 */
+    input[type="radio"]:hover{
+        box-shadow: 0 0 0 max(4px, 0.2em) lightgray;
+        cursor: pointer;
+    }
+
+    input[type="radio"]:hover + span{
+        cursor: pointer;
+    }
+
+    /* 불능 상태 스타일 */
+    input[type="radio"]:disabled{
+        background-color: lightgray;
+        box-shadow: none;
+        opacity: 0.7;
+        cursor: not-allowed;
+    }
+
+    input[type="radio"]:disabled + span{
+        opacity: 0.7;
+        cursor: not-allowed;
+    }
+
+    /* 애니메이션 효과 */
+    input[type="radio"]{
+        vertical-align: middle;
+        appearance: none;
+        border: max(2px, 0.1em) solid gray;
+        border-radius: 50%;
+        width: 1.25em;
+        height: 1.25em;
+        transition: border 0.2s ease-in-out;
+    }
+
+</style>
+<div>
+    <label>
+        <input type="radio" name="contact" value="email" checked/>
+        <span>이메일</span>
+    </label>
+    <label>
+        <input type="radio" name="contact" value="phone" />
+        <span>전화</span>
+    </label>
+    <label>
+        <input type="radio" name="contact" value="fax" disabled />
+        <span>팩스</span>
+    </label>
+    <label>
+        <input type="radio" name="contact" value="mail" checked />
+        <span>우편</span>
+    </label>
+</div>
+<hr />
+
+
+
 @code {
     // alert 함수 선언
     private async Task btnbutton() { await JSRuntime.InvokeAsync<object>("CustomAlert"); }
 
+    // alert
     private async Task btnTransText()
     {
         await JSRuntime.InvokeAsync<object>("TransText","txtTrans","변경후 내용입니다.");
     }
+
+    // confirm
+    private async Task btnConfirmbutton()
+    {
+        var temp = await JSRuntime.InvokeAsync<object>("CustomConfirm", "confirm() 실행");
+        Console.WriteLine(temp);
+    }
+
+    // prompt
+    private async Task btnPrompt()
+    {
+        var temp = await JSRuntime.InvokeAsync<object>("CustomPrompt", "전달할내용", "입력공간");
+        Console.WriteLine(temp);
+    }
+
+
 }

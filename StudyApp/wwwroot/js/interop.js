@@ -25,6 +25,8 @@ function createAlert(item) {
     }
 }
 
+
+
 function boxview() {
     
     var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
@@ -43,6 +45,17 @@ function boxview() {
 function CustomAlert() {
     alert("alert() 실행");
 }
+
+function CustomConfirm(content) {
+    const result = confirm(content);
+    return result;
+}
+
+function CustomPrompt(content, contentsub) {
+    const result = prompt(content, contentsub);
+    return result;
+}
+
 
 // 글자 스타일 및 내용 변경
 function TransText(item,content) {
