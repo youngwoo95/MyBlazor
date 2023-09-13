@@ -1,0 +1,34 @@
+﻿@using Microsoft.AspNetCore.Components.Web
+@namespace StudyApp2.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="~/" />
+    <link href="./css/index.css" rel="stylesheet"/>
+    <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
+</head>
+<body>
+    <div class="mainBanner">
+        <p class="text">
+            My Shop
+        </p>
+    </div>
+    <div class="navibar">
+        <ul class="menulist">
+            <li style="position:relative"><a href="#">MENU1</a>
+                <ul>
+                    <li style="position: absolute;"><a href="#">SUB1</a></li>
+                    <li><a href="#">SUB2</a></li>
+                    <li><a href="#">SUB3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    @RenderBody()
+    <script src="_framework/blazor.server.js"></script>
+</body>
+</html>

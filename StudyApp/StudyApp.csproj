@@ -6,4 +6,14 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Resource Include="wwwroot\img\banner.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\img\item1.jpeg" />
+    <None Include="wwwroot\img\item2.png" />
+    <None Include="wwwroot\img\item3.jpeg" />
+  </ItemGroup>
+
 </Project>

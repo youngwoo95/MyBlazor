@@ -1,0 +1,138 @@
+﻿html, body {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    width: 100%;
+    height: 250px;
+    border-bottom: 1px solid black;
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_title {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 12px 12px 10px rgba(0,0,0,0.5);
+    animation: headerText 1s ease-in-out;
+}
+
+@keyframes headerText{
+    0%{
+        transform: translateY(70%);
+        opacity:0;
+    }
+    92% {
+        transform: translateY(-1px);
+    }
+    100% {
+        transform: translateY(0);
+        opacity:1;
+    }
+}
+
+.navibar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.menu {
+    width: 95%;
+    height: 50px;
+    background-color:#232323;
+    display: block;
+}
+
+.menu_item {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin:0;
+}
+
+.dropdown {
+    position: relative;
+    list-style: none;
+}
+
+.dropdownmenu {
+    color: white;
+    width: 80px;
+    padding: 13px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.dropdowncontent {
+    position: absolute;
+    background-color: #232323;
+    min-width: 110px;
+    display: none;
+    z-index: 1
+}
+
+    .dropdowncontent a {
+        text-decoration: none;
+        display: block;
+        padding: 12px 16px;
+        text-align: center;
+        color: white;
+    }
+
+        .dropdowncontent a:hover {
+            background-color: red;
+            color: black;
+        }
+
+.dropdown:hover .dropdowncontent {
+    display: block;
+}
+
+.dropdownmenu:hover {
+    background-color: orange;
+    color: black;
+}
+
+.home {
+    width: 5%;
+    height: 50px;
+    border: none;
+    background-color: orange;
+    text-align: center;
+}
+
+    .home a {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+        width: 100%;
+        height: 100%;
+        line-height: 50px;
+    }
+
+    .home:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+    .home a:hover {
+        color: black;
+    }

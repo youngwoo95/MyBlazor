@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Id": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
       "Id": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "PackagePath": "staticwebassets\\css\\open-iconic"
     },
@@ -55,6 +59,22 @@
     {
       "Id": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\img\\banner.jpg",
+      "PackagePath": "staticwebassets\\img\\banner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\img\\item1.jpeg",
+      "PackagePath": "staticwebassets\\img\\item1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\img\\item2.png",
+      "PackagePath": "staticwebassets\\img\\item2.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\img\\item3.jpeg",
+      "PackagePath": "staticwebassets\\img\\item3.jpeg"
     },
     {
       "Id": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp\\wwwroot\\js\\interop.js",

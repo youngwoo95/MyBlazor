@@ -24,6 +24,7 @@ namespace StudyApp
                 app.UseHsts();
             }
 
+
             app.UseHttpsRedirection();
 
             app.UseStaticFiles();
