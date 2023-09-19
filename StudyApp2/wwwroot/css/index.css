@@ -26,29 +26,65 @@ html, body {
     font-weight:700;
     text-shadow: 12px 12px 10px rgba(0,0,0,0.5);
     animation: titleText 1s ease-in-out;
-    
+    text-decoration:none;
 }
 
-.navibar {
+
+.navi .navimenu {
     width: 100%;
-    height: 70px;
-    background-color: #9c5c69;
-    display: flex;
-    flex-direction: row;
-
-}
-
-.menulist {
-    background-color: red;
-    height: 100%;
-    margin: 0;
+    background-color:rgba(44,42,39,03983);
+    list-style-type: none;
+    margin:0;
+    padding:0;
     display:flex;
     flex-direction:row;
-    justify-content:center;
-    align-items:center;
-    list-style:none;
 }
 
+
+.dropdown{
+    position:relative;
+    transition: all 0.2s ease-in-out;
+}
+
+.dropdown-dept1{
+    color:white;
+    padding:16px;
+    font-size:16px;
+    cursor: pointer;
+    min-width:160px;
+    text-align:center;
+}
+
+.dropdown-dept2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.dropdown-dept2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.2s ease-in-out;
+}
+.dropdown:hover {
+    background-color: red;
+    transition: all 0.2s ease-in-out;
+}
+
+    /* dropdown-menu 에는 hover 적용이 안됨 */
+    .dropdown:hover .dropdown-dept2 {
+        display: block;
+    }
+
+.dropdown-dept2 a:hover {
+    background-color: rgb(138, 138, 170);
+    transition: all 0.2s ease-in-out;
+}
 
 
 
@@ -70,4 +106,14 @@ html, body {
 }
 
 
+@media screen and (max-width: 767px){
+    .navi .navimenu {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .dropdown-dept2 {
+        position: relative;
+        width:100%
+    }
+}

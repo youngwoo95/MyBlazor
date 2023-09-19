@@ -1,0 +1,134 @@
+﻿@page "/regit"
+@layout EmptyLayout
+
+<style>
+    *{
+        box-sizing:border-box;
+    }
+
+    html, body{
+        padding: 0;
+        margin: 0;
+        height:100%;
+        width:100%;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container_wrapper{
+        width:800px;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        border: 1px solid black;
+        border-radius:10px;
+        padding:10px;
+        margin-top:10px;
+    }
+  
+    .title_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: aliceblue;
+    }
+
+    .content_wrapper{
+        display:flex;
+        flex-direction:row;
+        justify-content:flex-start;
+        width:100%;
+    }
+   
+    .title{
+        font-weight:bold;
+        font-size:30px;
+    }
+
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button{
+        appearance:none;
+    }
+</style>
+
+
+<div class="container">
+   <div class="container_wrapper">
+       <div class="title_wrapper">
+            <div class="title">회원가입</div>
+            <div class="title_contents" style="color:darkgray">회원 정보를 입력해주세요.</div>
+        </div>
+
+         <p>이메일</p>
+         <input type="text" style="height:30px" placeholder="이메일을 입력해주세요."/>
+            
+         <p>이름</p>
+         <input type="text" style="height:30px" placeholder="이름을 입력해주세요."/>
+
+         <p>비밀번호</p>
+         <input type="password" style="height:30px" placeholder="비밀번호를 입력해주세요."/>
+
+         <p>비밀번호 재확인</p>
+         <input type="password" style="height:30px" placeholder="비밀번호를 다시 입력해주세요."/>
+
+        <p>지역</p>
+        <select style="height:30px">
+            <optgroup label="특별시">
+                <option>서울</option>
+            </optgroup>
+            <optgroup label="광역시">
+                <option>부산</option>
+                <option>인천</option>
+                <option>대구</option>
+                <option>대전</option>
+                <option>광주</option>
+                <option>울산</option>
+                <option>세종</option>
+            </optgroup>
+        </select>
+
+        <p>성별</p>
+        <div style="display:flex;flex-direction:row;">
+            <input type="radio" name="gender"/>남자
+            <input type="radio" name="gender"/>여자
+        </div>
+
+         <p>전화번호</p>
+         <div style="display:flex; flex-direction:row; justify-content:space-around">
+            <input type="number" style="height:30px" /> -
+            <input type="number" style="height:30px" /> -
+            <input type="number" style="height:30px" />
+        </div>
+
+        <div style="display:flex; flex-direction:row; justify-content:flex-end; align-items:center; margin-top:20px">
+            <span>000000</span>
+            <input type="button" value="인증번호 발급" style="background-color:gray; color:white; height:35px; width:120px; border:none; border-radius:5px; margin-left:5px;"/>
+        </div>
+
+        <div style="display:flex; flex-direction:row; justify-content:flex-end; align-items:center; margin-top:20px">
+            <span>3:00</span>
+            <input type="button" value="인증확인" style="background-color:gray; color:white; height:35px; width:120px; border:none; border-radius:5px; margin-left:5px;" />
+        </div>
+        
+        <p>이용약관</p>
+        <div style="border: 1px solid black; height:190px; overflow:auto">
+            이용약관~~~~
+        </div>
+
+        <div style="border-bottom:1px solid black"></div>
+        <div style="display:flex; flex-direction:row; justify-content:center;">
+            <input type="button" value="가입하기" style="margin:10px 10px 0 0; background-color:cornflowerblue; color:white; width:150px; height:35px; border-radius:5px; border:none;"/>
+            <input type="button" value="취소" style="margin:10px 0 0 0; background-color:crimson; color:white; width:150px; height:35px; border-radius:5px; border:none;"/>
+        </div>
+        
+    </div>
+</div>
+@code {
+ 
+}

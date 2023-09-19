@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8E/6XYb/k2mLqVA/KUv1u1PP1cLzASUm2Sfkvs1m6uY=",
+  "Hash": "unGWlkUi3dzzTS6LLpZcD+jHSrmV6uFUQoiDwB+xrh8=",
   "Source": "StudyApp2",
   "BasePath": "_content/StudyApp2",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp2\\wwwroot\\css\\index.css",
+      "SourceId": "StudyApp2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp2\\wwwroot\\",
+      "BasePath": "_content/StudyApp2",
+      "RelativePath": "css/index.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\index.css"
     },
     {
       "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp2\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
@@ -270,6 +287,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp2\\wwwroot\\img\\banner02.jpeg",
+      "SourceId": "StudyApp2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp2\\wwwroot\\",
+      "BasePath": "_content/StudyApp2",
+      "RelativePath": "img/banner02.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\banner02.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp2\\wwwroot\\img\\banner03.jpg",
+      "SourceId": "StudyApp2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp2\\wwwroot\\",
+      "BasePath": "_content/StudyApp2",
+      "RelativePath": "img/banner03.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\banner03.jpg"
     }
   ]
 }
