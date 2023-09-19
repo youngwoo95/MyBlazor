@@ -1,5 +1,7 @@
 ﻿@page "/regit"
 @layout EmptyLayout
+@inject IJSRuntime JSRuntime
+
 
 <style>
     *{
@@ -37,6 +39,7 @@
         align-items: center;
         width: 100%;
         background-color: aliceblue;
+        padding:10px;
     }
 
     .content_wrapper{
@@ -51,12 +54,47 @@
         font-size:30px;
     }
 
+    .btnregit{
+        margin: 10px 10px 0 0;
+        background-color: cornflowerblue;
+        color: white;
+        width: 150px;
+        height: 35px;
+        border:0px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .btncancel{
+        margin: 10px 0 0 0;
+        background-color: crimson;
+        color: white;
+        width: 150px;
+        height: 35px;
+        border: 0px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .btnregit:hover{
+        transition: all 0.3s ease-in-out;
+        background-color:blue;
+        box-shadow: 1px 1px gray;
+    }
+
+    .btncancel:hover{
+        transition: all 0.3s ease-in-out;
+        background-color: red;
+        box-shadow: 1px 1px gray;
+    }
+
     input[type="number"]::-webkit-outer-spin-button,
     input[type="number"]::-webkit-inner-spin-button{
         appearance:none;
     }
 </style>
-
 
 <div class="container">
    <div class="container_wrapper">
@@ -100,7 +138,7 @@
         </div>
 
          <p>전화번호</p>
-         <div style="display:flex; flex-direction:row; justify-content:space-around">
+         <div style="display:flex; flex-direction:row; justify-content:space-around; margin:0 80px">
             <input type="number" style="height:30px" /> -
             <input type="number" style="height:30px" /> -
             <input type="number" style="height:30px" />
@@ -120,15 +158,26 @@
         <div style="border: 1px solid black; height:190px; overflow:auto">
             이용약관~~~~
         </div>
-
+        
         <div style="border-bottom:1px solid black"></div>
         <div style="display:flex; flex-direction:row; justify-content:center;">
-            <input type="button" value="가입하기" style="margin:10px 10px 0 0; background-color:cornflowerblue; color:white; width:150px; height:35px; border-radius:5px; border:none;"/>
-            <input type="button" value="취소" style="margin:10px 0 0 0; background-color:crimson; color:white; width:150px; height:35px; border-radius:5px; border:none;"/>
+            <input id="regitbtn" type="button" value="가입하기" class="btnregit" @onclick="Regit_method"/>
+            <input type="button" value="취소" class="btncancel" @onclick="Cancel_method" />
         </div>
-        
     </div>
 </div>
+
+  
 @code {
- 
+
+    private async Task Regit_method()
+    {
+        await JSRuntime.InvokeAsync<object>("alert", "가입하기버튼입니다.");
+    }
+
+
+    private async Task Cancel_method()
+    {
+        await JSRuntime.InvokeAsync<object>("alert", "취소버튼입니다.");
+    }
 }

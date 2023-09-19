@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BsCickRbIMsSSKvkTfbM5EXnjnmxrKSy92q0iwZHWHg=",
+  "Hash": "xWh41CUnZOVpsNuy6YhWH6BnhAsIhsWR2VANpV8+a5A=",
   "Source": "StudyApp3",
   "BasePath": "_content/StudyApp3",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "StudyApp3\\wwwroot",
       "Source": "StudyApp3",
-      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\",
       "BasePath": "_content/StudyApp3",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\obj\\Debug\\net6.0\\scopedcss\\bundle\\StudyApp3.styles.css",
+      "Identity": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\obj\\Debug\\net6.0\\scopedcss\\bundle\\StudyApp3.styles.css",
       "SourceId": "StudyApp3",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/StudyApp3",
       "RelativePath": "StudyApp3.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\obj\\Debug\\net6.0\\scopedcss\\bundle\\StudyApp3.styles.css"
+      "OriginalItemSpec": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\obj\\Debug\\net6.0\\scopedcss\\bundle\\StudyApp3.styles.css"
     },
     {
-      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\StudyApp3.bundle.scp.css",
+      "Identity": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\StudyApp3.bundle.scp.css",
       "SourceId": "StudyApp3",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/StudyApp3",
       "RelativePath": "StudyApp3.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\StudyApp3.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\StudyApp3.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "StudyApp3",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\",
       "BasePath": "_content/StudyApp3",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "StudyApp3",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\",
       "BasePath": "_content/StudyApp3",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\css\\index.css",
+      "Identity": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\css\\index.css",
       "SourceId": "StudyApp3",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\",
       "BasePath": "_content/StudyApp3",
       "RelativePath": "css/index.css",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\index.css"
     },
     {
-      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "StudyApp3",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\",
       "BasePath": "_content/StudyApp3",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "StudyApp3",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\",
       "BasePath": "_content/StudyApp3",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "StudyApp3",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\",
       "BasePath": "_content/StudyApp3",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "StudyApp3",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\",
       "BasePath": "_content/StudyApp3",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "StudyApp3",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\",
       "BasePath": "_content/StudyApp3",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "StudyApp3",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\",
       "BasePath": "_content/StudyApp3",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "StudyApp3",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\",
       "BasePath": "_content/StudyApp3",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "StudyApp3",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\",
       "BasePath": "_content/StudyApp3",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "StudyApp3",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\",
       "BasePath": "_content/StudyApp3",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\css\\site.css",
       "SourceId": "StudyApp3",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\",
       "BasePath": "_content/StudyApp3",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\favicon.ico",
       "SourceId": "StudyApp3",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\",
       "BasePath": "_content/StudyApp3",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\img\\banner02.jpeg",
+      "Identity": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\img\\banner02.jpeg",
       "SourceId": "StudyApp3",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\",
       "BasePath": "_content/StudyApp3",
       "RelativePath": "img/banner02.jpeg",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\img\\banner02.jpeg"
     },
     {
-      "Identity": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\img\\banner03.jpg",
+      "Identity": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\img\\banner03.jpg",
       "SourceId": "StudyApp3",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Documents\\MyBlazor\\StudyApp3\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\rlady\\OneDrive\\문서\\MyBlazor\\StudyApp3\\wwwroot\\",
       "BasePath": "_content/StudyApp3",
       "RelativePath": "img/banner03.jpg",
       "AssetKind": "All",

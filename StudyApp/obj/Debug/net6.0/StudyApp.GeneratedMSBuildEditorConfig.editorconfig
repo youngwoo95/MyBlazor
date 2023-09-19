@@ -9,53 +9,53 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = StudyApp
 build_property.RootNamespace = StudyApp
-build_property.ProjectDir = C:\Users\user\Documents\MyBlazor\StudyApp\
+build_property.ProjectDir = C:\Users\rlady\OneDrive\문서\MyBlazor\StudyApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\user\Documents\MyBlazor\StudyApp
+build_property.MSBuildProjectDirectory = C:\Users\rlady\OneDrive\문서\MyBlazor\StudyApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/user/Documents/MyBlazor/StudyApp/App.razor]
+[C:/Users/rlady/OneDrive/문서/MyBlazor/StudyApp/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/MyBlazor/StudyApp/Pages/ExampleComponent.razor]
+[C:/Users/rlady/OneDrive/문서/MyBlazor/StudyApp/Pages/ExampleComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhhbXBsZUNvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/MyBlazor/StudyApp/Pages/Index.razor]
+[C:/Users/rlady/OneDrive/문서/MyBlazor/StudyApp/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/MyBlazor/StudyApp/Pages/Shop.razor]
+[C:/Users/rlady/OneDrive/문서/MyBlazor/StudyApp/Pages/Shop.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hvcC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/MyBlazor/StudyApp/Pages/Table.razor]
+[C:/Users/rlady/OneDrive/문서/MyBlazor/StudyApp/Pages/Table.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFibGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/MyBlazor/StudyApp/Shared/SurveyPrompt.razor]
+[C:/Users/rlady/OneDrive/문서/MyBlazor/StudyApp/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/MyBlazor/StudyApp/_Imports.razor]
+[C:/Users/rlady/OneDrive/문서/MyBlazor/StudyApp/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/MyBlazor/StudyApp/Shared/MainLayout.razor]
+[C:/Users/rlady/OneDrive/문서/MyBlazor/StudyApp/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-kvc4o9cqrd
 
-[C:/Users/user/Documents/MyBlazor/StudyApp/Pages/Error.cshtml]
+[C:/Users/rlady/OneDrive/문서/MyBlazor/StudyApp/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/MyBlazor/StudyApp/Pages/_Host.cshtml]
+[C:/Users/rlady/OneDrive/문서/MyBlazor/StudyApp/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/MyBlazor/StudyApp/Pages/_Layout.cshtml]
+[C:/Users/rlady/OneDrive/문서/MyBlazor/StudyApp/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
